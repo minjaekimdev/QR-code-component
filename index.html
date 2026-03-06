@@ -28,79 +28,66 @@
         padding: 0;
       }
       body {
-        position: relative;
-        background-color: hsl(212, 45%, 89%);
-        display: flex;
-        flex-direction: column;
         width: 100vw;
         height: 100vh;
+        background: hsl(212, 45%, 89%);
+        display: flex;
         justify-content: center;
         align-items: center;
       }
       .item {
-        display: inline-flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 18px;
-        border-radius: 16px;
-        width: 288px;
-        padding: 14px;
-        background-color: hsl(0, 0%, 100%);
-      }
-      .item__image {
-        width: 260px;
-        border-radius: 10px;
-      }
-      .item__textGroup {
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: 20px;
+        width: 280px;
+        padding: 16px;
+        border-radius: 16px;
+        background: hsl(0, 0%, 100%);
+      }
+      .item__image {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+      .item__main {
+        display: flex;
+        flex-direction: column;
         align-items: center;
         text-align: center;
-        padding-bottom: 20px;
+        gap: 16px;
+        padding: 0 20px 20px;
+        font-family: "Outfit", sans-serif;
       }
       .item__title {
-        font-family: "Outfit", sans-serif;
+        font-size: 18px;
         font-weight: 700;
-        font-size: 20px;
         color: hsl(218, 44%, 22%);
       }
       .item__description {
-        font-family: "Outfit", sans-serif;
-        font-weight: 400;
         font-size: 15px;
+        font-weight: 400;
         color: hsl(216, 15%, 48%);
-      }
-      .attribution {
-        position: absolute;
-        bottom: 0;
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
       }
     </style>
   </head>
   <body>
     <div class="item">
-      <img class="item__image" src="./images//image-qr-code.png" alt="" />
-      <div class="item__textGroup">
-        <span class="item__title"
-          >Improve your front-end skills by building projects</span
-        >
-        <span class="item__description"
-          >Scan the QR code to visit Frontend Mentor and take your coding skills
-          to the next level</span
-        >
+      <img
+        class="item__image"
+        src="./images/image-qr-code.png"
+        alt="qr code image"
+        width="576"
+        height="576"
+      />
+      <div class="item__main">
+        <h1 class="item__title">
+          Improve your front-end skills by building projects
+        </h1>
+        <p class="item__description">
+          Scan the QR code to visit Frontned Mentor and take your coding skillis
+          to the next level
+        </p>
       </div>
-    </div>
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Minjae Kim</a>.
     </div>
   </body>
 </html>
